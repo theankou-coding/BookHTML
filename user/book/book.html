@@ -3,23 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/2cb32d2197.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Online Book Reading</title>
     <link rel="stylesheet" href="book.css" />
   </head>
   <body>
     <!-- Navbar -->
     <header>
-      <div class="logo">
-        <img src="/immage/logo.png" alt="Logo" />
-        <span>ReadME</span>
+      <div class="navigation container_width">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="/immage/logo.png" alt="Logo" />
+            <span>ReadME</span>
+          </a>
+        </div>
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact Us</a>
+          <a href="/user/book/book.html">Books</a>
+          <a href="book-detail.html">Book Detail</a>
+        </nav>
+        <div class="btn-signup">
+          <div>
+            <a href="#"><i class="fa-solid fa-user-tie"></i></a>
+          </div>
+        </div>
       </div>
-      <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact Us</a>
-        <a href="books.html">Books</a>
-        <a href="book-detail.html">Book Detail</a>
-      </nav>
     </header>
 
     <!-- Search and category buttons -->
@@ -331,6 +344,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="/user/script.js"></script>
   </body>
 </html>
