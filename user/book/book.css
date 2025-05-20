@@ -52,6 +52,10 @@ header {
   font-weight: bold;
 }
 
+.navbar {
+  display: flex;
+  gap: 20px;
+}
 .navbar a {
   color: white;
   font-size: 1.1rem;
