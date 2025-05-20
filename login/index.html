@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bookstore Sign In / Sign Up - Pink Theme</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container" aria-label="Bookstore authentication container">
+      <!-- Sign In Form -->
+      <form id="signin-form" aria-labelledby="signin-title">
+        <h2 id="signin-title">Sign In</h2>
+        <label for="signin-email">Email Address</label>
+        <input
+          type="email"
+          id="signin-email"
+          name="signin-email"
+          placeholder="you@example.com"
+          required
+        />
+
+        <label for="signin-password">Password</label>
+        <input
+          type="password"
+          id="signin-password"
+          name="signin-password"
+          placeholder="********"
+          required
+        />
+
+        <button type="submit"><a href="/user/indext.html">Sign In</a></button>
+        <div class="toggle-link" id="to-signup">
+          Don't have an account? Sign Up
+        </div>
+      </form>
+
+      <!-- Sign Up Form -->
+      <form id="signup-form" aria-labelledby="signup-title">
+        <h2 id="signup-title">Sign Up</h2>
+        <label for="signup-name">Full Name</label>
+        <input
+          type="text"
+          id="signup-name"
+          name="signup-name"
+          placeholder="Jane Doe"
+          required
+        />
+
+        <label for="signup-email">Email Address</label>
+        <input
+          type="email"
+          id="signup-email"
+          name="signup-email"
+          placeholder="you@example.com"
+          required
+        />
+
+        <label for="signup-password">Create Password</label>
+        <input
+          type="password"
+          id="signup-password"
+          name="signup-password"
+          placeholder="********"
+          required
+        />
+
+        <button type="submit">Sign Up</button>
+        <div class="toggle-link" id="to-signin">
+          Already have an account? Sign In
+        </div>
+      </form>
+    </div>
+
+    <script>
+      // Existing toggle code
+      const signinForm = document.getElementById("signin-form");
+      const signupForm = document.getElementById("signup-form");
+      const toSignupLink = document.getElementById("to-signup");
+      const toSigninLink = document.getElementById("to-signin");
+
+      toSignupLink.addEventListener("click", () => {
+        signinForm.style.display = "none";
+        signupForm.style.display = "flex";
+      });
+
+      toSigninLink.addEventListener("click", () => {
+        signupForm.style.display = "none";
+        signinForm.style.display = "flex";
+      });
+
+      // Redirect on sign-in for demonstration (add your real auth logic)
+      signinForm.addEventListener("submit", (e) => {
+        e.preventDefault(); // prevent actual form submission
+        // Here you would validate credentials, then redirect:
+
+        // For demo: Redirect after sign-in form submit
+        window.location.href = "../user/index.html";
+      });
+    </script>
+  </body>
+</html>

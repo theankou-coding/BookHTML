@@ -1,0 +1,105 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #fff0f6;
+  color: #4a4a4a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(255, 105, 180, 0.25);
+  width: 380px;
+  max-width: 100%;
+  padding: 30px 35px;
+  transition: all 0.3s ease;
+}
+
+h2 {
+  text-align: center;
+  color: #d6336c;
+  margin-bottom: 25px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: #b21f4b;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border: 2px solid #f8bbd0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  color: #4a4a4a;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #d6336c;
+  outline: none;
+  box-shadow: 0 0 8px 2px #f48fb1;
+  background: #fff0f6;
+}
+
+button {
+  padding: 14px 0;
+  background: #d6336c;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  letter-spacing: 1.05px;
+  transition: background 0.25s ease;
+}
+button:hover {
+  background: #a31d4f;
+}
+
+.toggle-link {
+  margin-top: 18px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #d6336c;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+.toggle-link:hover {
+  color: #a31d4f;
+  text-decoration: underline;
+}
+
+/* Hide sign-up form by default */
+#signup-form {
+  display: none;
+}
